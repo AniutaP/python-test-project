@@ -95,7 +95,7 @@ async def check_time_exec_requests() -> None:
     print(end_time, check_res, sep='\n')
 
 
-# asyncio.run(check_time_exec_requests())
+asyncio.run(check_time_exec_requests())
 
 # 6
 
