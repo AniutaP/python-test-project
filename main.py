@@ -25,7 +25,7 @@ def get_projects_names(urls: List[str]) -> None:
         else:
             print(f'incorrect url: {url}')
 
-
+print('TASK № 1\n')
 get_projects_names(['https://github.com/AniutaP/python-project-83.git',
                   'htt://github.com/AniutaP/python-project-83.git',
                   '',
@@ -51,7 +51,9 @@ def merge_lists_to_dict(data1: List[str], data2: List[Any]) -> None:
     print(dict(result_dict))
 
 
+print('\nTASK № 2\n')
 merge_lists_to_dict(['b', 'a'], [4, 5, 6, 7, 8])
+merge_lists_to_dict(['b', 'a', 'c'], [4, 5])
 merge_lists_to_dict([1, {1, 2}], [4, 5, 6, 7, 8])
 
 
@@ -67,6 +69,7 @@ def change_elements(data: List[int | str]) -> None:
         print('empty data')
 
 
+print('\nTASK № 3\n')
 change_elements([1, 'a'])
 change_elements([])
 
@@ -95,6 +98,7 @@ async def check_time_exec_requests() -> None:
     print(end_time, check_res, sep='\n')
 
 
+print('\nTASK № 4\n')
 asyncio.run(check_time_exec_requests())
 
 # 6
@@ -162,7 +166,7 @@ class Text:
         print(*all_palindromes, sep=', ')
 
 
-
+print('\nTASK № 5, 6\n')
 text = Text('some not long words: abba, abba, klmnmlk')
 text.longest_word()
 text.most_common_word()
